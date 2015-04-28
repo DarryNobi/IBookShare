@@ -1,0 +1,34 @@
+<resources>
+    <!-- App信息 -->
+    <string name="app_name">IBookShare</string>
+    <string name="action_settings">设置</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- 注册页面 -->
+    <string name="reg_name">用 户 名</string>
+    <string name="reg_name_hint">请输入用户名</string>
+    <string name="reg_pwd">密   码 </string>
+    <string name="reg_pwd_hint">请输入6&#8211;16位字母或数字</string>
+    <string name="reg_pwd_again">确 认 密 码</string>
+    <string name="reg_pwd_again_hint">请再次输入密码</string>
+    <string name="reg_email">常 用 邮 箱</string>
+    <string name="reg_email_hint">请输入用于找回密码的邮箱</string>
+    <string name="reg_button">注册</string>
+
+    <!-- 登录界面 -->
+    <string name="login_name">用户名</string>
+    <string name="login_name_hint">请输入用户名</string>
+    <string name="login_pwd">密码</string>
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="login_button">登录</string>
+    <string name="login_forget_pwd">忘记密码</string>
+
+    <!-- 主界面 -->
+    <string name="main_login">登录</string>
+    <string name="main_register">注册</string>
+
+    <!--manifest文件-->
+    <string name="mani_login">登录</string>
+    <string name="mani_reg">注册</string>
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 输入用户名框-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dp"
+        android:layout_marginTop="10.0dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_name"
+            android:textColor="@color/black"
+            android:textSize="15.0sp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/reg_name_edit"
+            android:layout_width="220.0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/reg_name_hint"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+    <!-- 输入密码框-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_pwd"
+            android:textColor="@color/black"
+            android:textSize="15.0sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/reg_pwd_edit"
+            android:layout_width="220.0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/reg_pwd_hint"
+            android:maxLength="16"
+            android:inputType="textPassword"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+    <!-- 再次输入密码框 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dp"
+        android:orientation="horizontal"
+        android:gravity="left" >
+
+        <TextView
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_pwd_again"
+            android:textColor="@color/black"
+            android:textSize="15.0sp"/>
+
+        <EditText
+            android:id="@+id/reg_pwd2_edit"
+            android:layout_width="220.0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/reg_pwd_again_hint"
+            android:maxLength="16"
+            android:inputType="textPassword"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+    <!-- 输入邮箱框 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dp"
+        android:orientation="horizontal"
+        android:gravity="left">
+
+        <TextView
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_email"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+
+        <EditText
+            android:id="@+id/reg_email_edit"
+            android:layout_width="220.0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/reg_email_hint"
+            android:maxLength="16"
+            android:inputType="textEmailAddress"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+    <!-- 注册按钮 -->
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15.0dip"
+        android:gravity="center"
+        android:text="@string/reg_button" />
+
+</LinearLayout>
