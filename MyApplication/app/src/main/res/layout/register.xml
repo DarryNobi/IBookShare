@@ -3,7 +3,14 @@
     android:id="@+id/register_layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:gravity="center"
     android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_action_person"
+        android:layout_margin="10dip"/>
 
     <!-- 输入用户名框-->
     <LinearLayout
@@ -11,7 +18,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="5.0dp"
         android:layout_marginTop="10.0dp"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <TextView
             android:layout_width="80.0dp"
@@ -25,6 +33,7 @@
             android:id="@+id/reg_name_edit"
             android:layout_width="220.0dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:hint="@string/reg_name_hint"
             android:textSize="15.0sp" />
     </LinearLayout>
@@ -34,7 +43,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5.0dp"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <TextView
             android:layout_width="80.0dp"
@@ -50,6 +60,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/reg_pwd_hint"
             android:maxLength="16"
+            android:gravity="center"
             android:inputType="textPassword"
             android:textSize="15.0sp" />
     </LinearLayout>
@@ -60,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5.0dp"
         android:orientation="horizontal"
-        android:gravity="left" >
+        android:gravity="center">
 
         <TextView
             android:layout_width="80.0dp"
@@ -75,6 +86,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/reg_pwd_again_hint"
             android:maxLength="16"
+            android:gravity="center"
             android:inputType="textPassword"
             android:textSize="15.0sp" />
     </LinearLayout>
@@ -85,7 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5.0dp"
         android:orientation="horizontal"
-        android:gravity="left">
+        android:gravity="center">
 
         <TextView
             android:layout_width="80.0dp"
@@ -100,6 +112,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/reg_email_hint"
             android:maxLength="16"
+            android:gravity="center"
             android:inputType="textEmailAddress"
             android:textSize="15.0sp" />
     </LinearLayout>
@@ -107,11 +120,14 @@
     <!-- 注册按钮 -->
     <Button
         android:id="@+id/reg_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="15.0dip"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
         android:gravity="center"
+        android:background="@color/green"
         android:text="@string/reg_button" />
 
 </LinearLayout>

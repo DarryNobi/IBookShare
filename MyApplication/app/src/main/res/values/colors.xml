@@ -6,11 +6,12 @@
     <color name="orange">#ffff740f</color>
     <color name="yellow">#ffe87215</color>
     <color name="red">#ffff0000</color>
-    <color name="gray">#ff7d7d7d</color>
-    <color name="dark_gray">#ff808080</color>
+    <color name="gray">#507d7d7d</color>
+    <color name="dark_gray">#30808080</color>
     <color name="font_black">#ff4b4b4b</color>
     <color name="home_item">#ffd90000</color>
     <color name="home_item_selector">#ffc9c9c9</color>
     <color name="home_item_normal">#fff2f2f2</color>
+    <color name="green">#ff0e8e1b</color>
 
 </resources>

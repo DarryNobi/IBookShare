@@ -12,7 +12,7 @@
     <string name="reg_pwd_again">确 认 密 码</string>
     <string name="reg_pwd_again_hint">请再次输入密码</string>
     <string name="reg_email">常 用 邮 箱</string>
-    <string name="reg_email_hint">请输入用于找回密码的邮箱</string>
+    <string name="reg_email_hint">请输入您的邮箱</string>
     <string name="reg_button">注册</string>
 
     <!-- 登录界面 -->

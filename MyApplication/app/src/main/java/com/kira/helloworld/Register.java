@@ -37,14 +37,12 @@ import java.net.URL;
                         url = new URL("http://ibookshare.sinaapp.com/");
                         urlConnection = (HttpURLConnection) url.openConnection();
                         InputStream in = new BufferedInputStream(urlConnection.getInputStream());
-                        in
                     }catch(Exception e){
                         e.printStackTrace();
                     }finally {
                             urlConnection.disconnect();
                         }
                     }
-                }
             });
         }
     }
