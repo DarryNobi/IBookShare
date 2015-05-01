@@ -1,5 +1,7 @@
 package com.kira.helloworld;
 
+import android.app.ActionBar;
+import android.app.TabActivity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -8,36 +10,23 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TabHost;
 
 
+public class MainActivity extends TabActivity {
 
-public class MainActivity extends ActionBarActivity {
+    private TabHost tabHost;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main);
 
-        Button button_login=(Button)findViewById(R.id.main_login);
-        button_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(MainActivity.this, Login.class);
-                startActivity(intent);
-            }
-        });
+        tabHost = this.getTabHost();
+        TabHost.TabSpec spec;
+        Intent intent;
 
-        Button button_register=(Button)findViewById(R.id.main_register);
-        button_register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(MainActivity.this, Register.class);
-                Log.v("1", "2");
-                startActivity(intent);
-            }
-        });
+
     }
 
 
