@@ -8,7 +8,7 @@
     <FrameLayout
         android:layout_width="fill_parent"
         android:layout_height="124dp"
-        android:background="@drawable/user_info_bg"
+        android:background="@mipmap/user_info_bg"
         android:orientation="vertical" >
 
         <LinearLayout 
@@ -25,11 +25,11 @@
 	         	    android:id="@+id/userface" 
 	         	    android:layout_width="fill_parent" 
 	         	    android:layout_height="fill_parent" 
-	         	    android:src="@drawable/face" />
+	         	    android:src="@mipmap/face" />
 	         	<ImageView 
 	         	    android:layout_width="fill_parent" 
 	         	    android:layout_height="fill_parent" 
-	         	    android:src="@drawable/portrait_round" />
+	         	    android:src="@mipmap/portrait_round" />
 	    	</FrameLayout>
 	    	<LinearLayout 
 	    	    android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
 	    	    android:layout_marginTop="10dip"
 	    	    android:orientation="vertical"
 	    	    android:gravity="center_horizontal"
-	    	    android:background="@drawable/me_my_fans_bg">
+	    	    android:background="@mipmap/me_my_fans_bg">
 	         	<TextView 
 	         	    android:id="@+id/photo"
 	         	    android:layout_width="wrap_content"
@@ -83,7 +83,7 @@
 	    	     android:gravity="center_vertical"
 	    	    android:orientation="horizontal"
 	    	  
-	    	    android:background="@drawable/more_item_press">
+	    	    android:background="@menu/more_item_press">
 	         	<TextView 
 	         	   
 	         	    android:layout_width="wrap_content"
@@ -112,7 +112,7 @@
 	    	     android:gravity="center_vertical"
 	    	    android:orientation="horizontal"
 	    	  
-	    	    android:background="@drawable/more_item_press">
+	    	    android:background="@menu/more_item_press">
 	         	<TextView 
 	         	   
 	         	    android:layout_width="wrap_content"
@@ -140,7 +140,7 @@
 	    	     android:gravity="center_vertical"
 	    	    android:orientation="horizontal"
 	    	  
-	    	    android:background="@drawable/more_item_press">
+	    	    android:background="@menu/more_item_press">
 	         	<TextView 
 	         	   
 	         	    android:layout_width="wrap_content"
@@ -168,7 +168,7 @@
 	    	     android:gravity="center_vertical"
 	    	    android:orientation="horizontal"
 	    	  
-	    	    android:background="@drawable/more_item_press">
+	    	    android:background="@menu/more_item_press">
 	         	<TextView 
 	         	   
 	         	    android:layout_width="wrap_content"
@@ -199,6 +199,6 @@
 	    	    android:text="点击修改资料"
 	    	   android:textSize="20sp"
 	    	   android:textColor="#000000"
-	    	    android:background="@drawable/more_item_press"></Button>
+	    	    android:background="@menu/more_item_press"></Button>
      
 </LinearLayout>
