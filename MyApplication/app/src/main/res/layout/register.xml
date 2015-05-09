@@ -34,6 +34,7 @@
             android:layout_width="220.0dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:maxLength="16"
             android:hint="@string/reg_name_hint"
             android:textSize="15.0sp" />
     </LinearLayout>
@@ -111,7 +112,7 @@
             android:layout_width="220.0dp"
             android:layout_height="wrap_content"
             android:hint="@string/reg_email_hint"
-            android:maxLength="16"
+            android:maxLength="30"
             android:gravity="center"
             android:inputType="textEmailAddress"
             android:textSize="15.0sp" />
