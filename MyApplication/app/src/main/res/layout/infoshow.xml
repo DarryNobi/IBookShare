@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:background="#ffffff"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+	>
 
     <FrameLayout
         android:layout_width="fill_parent"
@@ -21,15 +22,12 @@
                 android:layout_width="60.0dip" 
                 android:layout_height="60.0dip"
                 android:layout_marginLeft="15dip">
-	         	<ImageView 
-	         	    android:id="@+id/userface" 
-	         	    android:layout_width="fill_parent" 
+
+	         	<ImageView
+					android:id="@+id/netface"
+					android:layout_width="fill_parent"
 	         	    android:layout_height="fill_parent" 
-	         	    android:src="@mipmap/face" />
-	         	<ImageView 
-	         	    android:layout_width="fill_parent" 
-	         	    android:layout_height="fill_parent" 
-	         	    android:src="@mipmap/portrait_round" />
+	         	    android:src="@mipmap/ic_action_person" />
 	    	</FrameLayout>
 	    	<LinearLayout 
 	    	    android:layout_width="wrap_content"
@@ -80,10 +78,10 @@
 	    	    android:layout_marginLeft="15dip"
 	    	     android:layout_marginRight="15dip"
 	    	    android:layout_marginTop="16dip"
-	    	     android:gravity="center_vertical"
+	    	     android:gravity="bottom"
 	    	    android:orientation="horizontal"
-	    	  
-	    	    android:background="@menu/more_item_press">
+
+		android:layout_gravity="bottom">
 	         	<TextView 
 	         	   
 	         	    android:layout_width="wrap_content"
@@ -112,7 +110,7 @@
 	    	     android:gravity="center_vertical"
 	    	    android:orientation="horizontal"
 	    	  
-	    	    android:background="@menu/more_item_press">
+	    	    >
 	         	<TextView 
 	         	   
 	         	    android:layout_width="wrap_content"
@@ -140,7 +138,7 @@
 	    	     android:gravity="center_vertical"
 	    	    android:orientation="horizontal"
 	    	  
-	    	    android:background="@menu/more_item_press">
+	    	    >
 	         	<TextView 
 	         	   
 	         	    android:layout_width="wrap_content"
@@ -168,7 +166,7 @@
 	    	     android:gravity="center_vertical"
 	    	    android:orientation="horizontal"
 	    	  
-	    	    android:background="@menu/more_item_press">
+	    	    >
 	         	<TextView 
 	         	   
 	         	    android:layout_width="wrap_content"
@@ -189,16 +187,16 @@
 	    	</LinearLayout>
 	    	
        <Button 
-           android:id="@+id/button"
-	    	    android:layout_width="fill_parent"
-	    	    android:layout_height="wrap_content"
-	    	    android:layout_marginLeft="15dip"
-	    	     android:layout_marginRight="15dip"
-	    	    android:layout_marginTop="16dip"
-	    	     android:gravity="center_vertical|center_horizontal"
+           android:id="@+id/modifybutton"
+		   android:layout_width="fill_parent"
+		   android:layout_height="wrap_content"
+		   android:layout_marginLeft="15dip"
+		   android:layout_marginRight="15dip"
+		   android:layout_marginTop="16dip"
+
+		   android:gravity="center_horizontal|bottom"
 	    	    android:text="点击修改资料"
 	    	   android:textSize="20sp"
-	    	   android:textColor="#000000"
-	    	    android:background="@menu/more_item_press"></Button>
+	    	   android:textColor="#000000"></Button>
      
 </LinearLayout>

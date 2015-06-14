@@ -1,6 +1,7 @@
 package com.kira.helloworld;
 
 import android.app.ActionBar;
+import android.app.Activity;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -13,19 +14,31 @@ import android.widget.Button;
 import android.widget.TabHost;
 
 
-public class MainActivity extends TabActivity {
+public class MainActivity extends Activity {
 
-    private TabHost tabHost;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.activity_main);
 
-        tabHost = this.getTabHost();
-        TabHost.TabSpec spec;
-        Intent intent;
+        Button register = (Button)findViewById(R.id.main_register);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Register.class);
+                startActivity(intent);
+            }
+        });
 
+        Button login = (Button)findViewById(R.id.main_login);
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Login.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
