@@ -17,9 +17,15 @@
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
 =======
 >>>>>>> upstream/master
+=======
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+>>>>>>> 427408196ebf9a1024b3eafb800f779bcd4d2ac0
 </project>
